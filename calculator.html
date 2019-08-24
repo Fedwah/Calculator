@@ -1,0 +1,53 @@
+<!DOC TYPE html>
+<html>
+    <head>
+            <title>MyStock</title>  
+            <meta charset="UTF-8"> 
+            <style>
+                body{
+                    align-self: center;
+                }
+                button{
+                    height: 50px;
+                    width: 50px;
+                }
+                input{
+                    width: 210px;
+                    height: 40px;
+                }
+                .centred-calculator{
+                    position : absolute ;
+                    top:30%;
+                    left : 45%;
+                    justify-content: center;
+                }
+            </style>
+    </head>
+    <body>
+        <div class="centred-calculator">
+            <input type="textbox" name="output" value="0" id="box"></input>
+             <br/>
+             <br/>
+            <button onclick= "show('1')" type="button">1</button>
+            <button onclick= "show('2')" type="button">2</button>
+            <button onclick= "show('3')" type="button">3</button>
+            <button onclick= "mult()" type="button">*</button>
+            <br/>
+            <button onclick= "show('4')" type="button">4</button>
+            <button onclick= "show('5')" type="button">5</button>
+            <button onclick= "show('6')" type="button">6</button>
+            <button onclick= "div()" type="button">/</button>
+            <br/>
+            <button onclick= "show('7')" type="button">7</button>
+            <button onclick= "show('8')" type="button">8</button>
+            <button onclick= "show('9')" type="button">9</button>
+            <button onclick= "add()" type="button">+</button>
+            <br/>
+            <button onclick= "show('0')" type="button">0</button>
+            <button onclick= "show('.')" type="button">.</button>
+            <button onclick= "sub()" type="button">-</button>
+            <button onclick= "result()" type="button">=</button>
+        </div>
+    </body>
+    <script src="javascript.js"></script>
+</html>
